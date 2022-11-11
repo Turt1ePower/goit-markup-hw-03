@@ -1,0 +1,265 @@
+:root {
+  --primary-color: #757575;
+  --secondary-color: #ffffff;
+  --title-color: #212121;
+  --accent-color: #2196f3;
+  --primary-background-color: #2f303a;
+  --secondary-background-color: #f5f4fa;
+  --header-logo-color: #000000;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --hero-hover-btn-color: #188ce8;
+}
+
+/* ---------UTILITY--------- */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  color: var(--title-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.btn {
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-address {
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* ---------HEADER--------- */
+
+/* LOGO */
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.logo:visited {
+  color: var(--accent-color);
+}
+
+.logo-header {
+  color: var(--header-logo-color);
+}
+
+.logo-footer {
+  color: var(--secondary-color);
+}
+
+/* NAVIGATION */
+
+.nav-link:link,
+.nav-link:visited,
+.nav-link:active {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.nav-item > .current-page {
+  color: var(--accent-color);
+}
+
+/* CONTACTS */
+
+.header-contact:link,
+.header-contact:visited,
+.header-contact:active {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--accent-color);
+}
+
+/* ---------SECTIONS--------- */
+
+/* HERO */
+
+.hero {
+  background-color: var(--primary-background-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hero-hover-btn-color);
+}
+
+/* FEATURES */
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* OUR WORKS */
+
+.works-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  letter-spacing: 0.03em;
+}
+
+/* OUR TEAM */
+
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  letter-spacing: 0.03em;
+}
+
+.teammate-card {
+  background-color: var(--secondary-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.teammate-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.teammate-position {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* PORTFOLIO */
+
+.filter-button {
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.card {
+  background-color: var(--secondary-color);
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.card-subtitle {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.card-link:link,
+.card-link:visited,
+.card-link:active,
+.card-link:hover,
+.card-link:focus {
+  color: inherit;
+}
+
+/* ---------FOOTER--------- */
+
+.page-footer {
+  background-color: var(--primary-background-color);
+}
+
+/* ADDRESS */
+
+.contact-address:link,
+.contact-address:visited,
+.contact-address:active {
+  color: var(--secondary-color);
+}
+.contact-address:hover,
+.contact-address:focus {
+  color: var(--accent-color);
+}
+
+.footer-contact:link,
+.footer-contact:visited,
+.footer-contact:active {
+  color: var(--footer-contact-color);
+}
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-color);
+}
