@@ -10,6 +10,28 @@
   --hero-hover-btn-color: #188ce8;
 }
 
+/* Reset */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
 /* ---------UTILITY--------- */
 
 body {
@@ -19,6 +41,17 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid tomato;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 .link {
@@ -56,6 +89,11 @@ body {
 }
 /* ---------HEADER--------- */
 
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+
 /* LOGO */
 
 .logo {
@@ -79,6 +117,15 @@ body {
 
 /* NAVIGATION */
 
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link:link,
 .nav-link:visited,
 .nav-link:active {
@@ -96,7 +143,21 @@ body {
   color: var(--accent-color);
 }
 
+.nav-item {
+  display: block;
+  padding: 32px 0;
+}
+
 /* CONTACTS */
+
+.header-contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contact-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .header-contact:link,
 .header-contact:visited,
@@ -117,7 +178,12 @@ body {
 
 .hero {
   background-color: var(--primary-background-color);
+  padding: 200px 0;
 }
+
+/* .hero .container {
+  display: flex;
+} */
 
 .hero-title {
   font-weight: 900;
@@ -126,6 +192,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-color);
+  display: inline-block;
+  padding: 0 0px 30px;
 }
 
 .hero-button {
@@ -137,6 +205,7 @@ body {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  padding: 10px 32px;
 }
 
 .hero-button:hover,
@@ -146,6 +215,18 @@ body {
 
 /* FEATURES */
 
+.features {
+  padding: 94px 0;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -154,6 +235,14 @@ body {
 }
 
 /* OUR WORKS */
+
+.works-list {
+  display: flex;
+}
+
+.section-no-padding {
+  padding-top: 0;
+}
 
 .works-title {
   font-weight: 700;
@@ -171,6 +260,10 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.67;
+}
+
+.teammate-list {
+  display: flex;
 }
 
 .teammate-card {
@@ -237,6 +330,7 @@ body {
 
 .page-footer {
   background-color: var(--primary-background-color);
+  padding: 60px 0;
 }
 
 /* ADDRESS */
