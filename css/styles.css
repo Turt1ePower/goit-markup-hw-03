@@ -89,6 +89,10 @@ body {
 }
 /* ---------HEADER--------- */
 
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .page-header .container {
   display: flex;
   align-items: center;
@@ -324,7 +328,21 @@ body {
 
 /* PORTFOLIO */
 
+/* PORTFOLIO FILTER */
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-button {
+  padding: 6px 22px;
+
   background-color: var(--secondary-background-color);
   border-radius: 4px;
   font-weight: 500;
@@ -334,14 +352,45 @@ body {
 
 .filter-button:hover,
 .filter-button:focus {
+  padding: 6 25px;
+
   background-color: var(--accent-color);
   color: var(--secondary-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* PORTFOLIO CARDS */
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
+  width: calc((100% - 60px) / 3);
+
   background-color: var(--secondary-color);
+}
+
+.card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.card-photo {
+  display: block;
+}
+
+.card-info {
+  padding: 20px 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .card-title {
